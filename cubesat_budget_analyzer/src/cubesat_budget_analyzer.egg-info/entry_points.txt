@@ -1,0 +1,2 @@
+[console_scripts]
+cubesat-budget-analyzer = cubesat_budget_analyzer.main:main
