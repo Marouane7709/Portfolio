@@ -87,6 +87,7 @@ export default function Home() {
       technologies: ['Python', 'PyQt6', 'Satellite Communications', 'Data Analysis'],
       // CubeSat / small satellite style image
       imageUrl: 'https://images.unsplash.com/photo-1708738793054-32b71e3fc822?q=80&w=1440&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      githubUrl: 'https://github.com/Marouane7709/Cubesat-budget-analyzer',
     },
     {
       title: 'E-commerce Platform Testing',
