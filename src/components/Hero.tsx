@@ -80,17 +80,18 @@ const Hero = () => {
               MSc Cybersecurity student at University of Wollongong Dubai, specializing in threat hunting, penetration testing, and post-quantum cryptography. Experienced in secure software engineering, SIEM operations, and vulnerability assessment with proven results in enterprise security.
             </motion.p>
 
-            <motion.button
-              onClick={handleScrollToProjects}
-              className="bg-green-500 hover:bg-green-600 text-slate-900 font-semibold px-8 py-3.5 rounded-lg transition-all duration-300 shadow-lg shadow-green-500/30 hover:shadow-green-500/50 mt-4"
+            <motion.a
+              href="/images/Marouane_ESSAID_Resume.pdf"
+              download
+              className="inline-block bg-green-500 hover:bg-green-600 text-slate-900 font-semibold px-8 py-3.5 rounded-lg transition-all duration-300 shadow-lg shadow-green-500/30 hover:shadow-green-500/50 mt-4"
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.5 }}
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
             >
-              Get Started
-            </motion.button>
+              Download My Resume
+            </motion.a>
           </motion.div>
 
           {/* Right Side - Cards */}

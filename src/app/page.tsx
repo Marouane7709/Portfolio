@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { FaGithub, FaLinkedin, FaEnvelope, FaCode, FaDatabase, FaMobile, FaServer, FaShieldAlt, FaTools, FaCloud, FaLock, FaNetworkWired } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope, FaCode, FaDatabase, FaMobile, FaServer, FaShieldAlt, FaTools, FaCloud, FaLock, FaNetworkWired, FaGraduationCap } from 'react-icons/fa';
 import Navigation from '@/components/Navigation';
 import SkillCard from '@/components/SkillCard';
 import ProjectCard from '@/components/ProjectCard';
@@ -128,6 +128,71 @@ export default function Home() {
               {skills.map((skill, index) => (
                 <SkillCard key={index} {...skill} />
               ))}
+            </motion.div>
+          </motion.div>
+        </section>
+
+        {/* Education Section */}
+        <section id="education" className="section-container relative overflow-hidden">
+          <div className="absolute left-1/2 top-0 -translate-x-1/2 w-screen h-full bg-gray-900/50 -z-10" />
+          <motion.div
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            className="space-y-12"
+          >
+            <motion.h2 
+              className="heading-2 text-center mb-16 gradient-text"
+              variants={fadeInUp}
+            >
+              Education
+            </motion.h2>
+            <motion.div 
+              className="max-w-4xl mx-auto space-y-8"
+              variants={fadeInUp}
+            >
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+                className="bg-gray-800/95 backdrop-blur-lg rounded-xl p-8 border border-gray-700/50 shadow-xl"
+              >
+                <div className="flex items-start gap-6">
+                  <div className="p-4 rounded-lg bg-green-900/50">
+                    <FaGraduationCap className="text-3xl text-green-400" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-bold text-white mb-2">Master of Science in Cybersecurity</h3>
+                    <p className="text-green-400 font-medium mb-2">University of Wollongong, Dubai, UAE</p>
+                    <p className="text-gray-300">Currently pursuing a Master's degree in Cybersecurity, specializing in threat hunting, penetration testing, and post-quantum cryptography.</p>
+                  </div>
+                </div>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.1 }}
+                className="bg-gray-800/95 backdrop-blur-lg rounded-xl p-8 border border-gray-700/50 shadow-xl"
+              >
+                <div className="flex items-start gap-6">
+                  <div className="p-4 rounded-lg bg-green-900/50">
+                    <FaGraduationCap className="text-3xl text-green-400" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-bold text-white mb-2">Bachelor of Science in Computer Science</h3>
+                    <p className="text-green-400 font-medium mb-2">Al Akhawayn University, Ifrane, Morocco</p>
+                    <p className="text-gray-300 mb-3">Completed Bachelor's degree in Computer Science with a strong foundation in software engineering, algorithms, and system design.</p>
+                    <div className="mt-4 pt-4 border-t border-gray-700/50">
+                      <p className="text-sm text-gray-400">
+                        <span className="text-green-400 font-medium">Exchange Semester:</span> Monroe University, New York, USA
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
             </motion.div>
           </motion.div>
         </section>
